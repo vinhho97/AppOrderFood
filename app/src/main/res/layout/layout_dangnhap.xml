@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBackgroundDangNhap"
+        >
+        <ImageView
+            android:layout_width="@dimen/size150dp"
+            android:layout_height="@dimen/size150dp"
+            android:src="@drawable/logodangnhap"
+            android:layout_alignRight="@+id/lnKhungDangNhap"
+            android:layout_marginTop="@dimen/size80dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:text="@string/dangnhap"
+            android:textSize="@dimen/size30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            />
+        <LinearLayout
+            android:id="@+id/lnKhungDangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <EditText
+                android:id="@+id/edTenDangNhapDN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tendangnhap"
+                android:padding="@dimen/size10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/size10dp"
+                android:textColorHint="@color/colorWhite"
+                android:drawableLeft="@drawable/ic_perm_identity_white_24dp"
+                android:drawablePadding="@dimen/size10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+
+                />
+
+            <EditText
+                android:id="@+id/edMatKhauDN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nhapmatkhau"
+                android:padding="@dimen/size10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColorHint="@color/colorWhite"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:drawablePadding="@dimen/size10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:inputType="textPassword"
+                />
+
+            <Button
+                android:id="@+id/btnDongYDN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dangnhap"
+                android:padding="@dimen/size10dp"
+                android:textSize="@dimen/size20sp"
+                android:background="@drawable/custom_button_dangnhap"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="@dimen/size10dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/btnDangKyDN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dangky"
+                android:background="@drawable/custom_button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:padding="@dimen/size10dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/size20sp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

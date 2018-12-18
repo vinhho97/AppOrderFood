@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBackgroundDangNhap"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/lnKhungDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:id="@+id/txtTieuDeDangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dangky"
+                android:layout_above="@+id/lnKhungDangKy"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                android:layout_marginTop="@dimen/size10dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center"
+                />
+            <EditText
+                android:id="@+id/edTenDangNhapDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tendangnhap"
+                android:textColorHint="@color/colorWhite"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                android:drawableLeft="@drawable/ic_perm_identity_white_24dp"
+                android:drawablePadding="@dimen/size10dp"
+                android:textColor="@color/colorWhite"
+                android:singleLine="true"
+                />
+
+            <EditText
+                android:id="@+id/edMatKhauDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nhapmatkhau"
+                android:textColorHint="@color/colorWhite"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:inputType="textPassword"
+                android:drawablePadding="@dimen/size10dp"
+                android:textColor="@color/colorWhite"
+                android:singleLine="true"
+                />
+            <EditText
+                android:id="@+id/edNhapLaiMatKhauDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nhaplaimatkhau"
+                android:textColorHint="@color/colorWhite"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
+                android:inputType="textPassword"
+                android:drawablePadding="@dimen/size10dp"
+                android:textColor="@color/colorWhite"
+                android:singleLine="true"
+                />
+
+            <RadioGroup
+                android:id="@+id/rgGioiTinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/rdNam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rdNu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    />
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinQuyen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/edNgaySinhDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ngaysinh"
+                android:textColorHint="@color/colorWhite"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                android:drawablePadding="@dimen/size10dp"
+                android:textColor="@color/colorWhite"
+                />
+
+            <EditText
+                android:id="@+id/edCMNDDK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/chungminhandan"
+                android:textColorHint="@color/colorWhite"
+                android:padding="@dimen/size10dp"
+                android:layout_margin="@dimen/size10dp"
+                android:drawableLeft="@drawable/idcard"
+                android:drawablePadding="@dimen/size10dp"
+                android:textColor="@color/colorWhite"
+                android:inputType="number"
+                android:maxLength="8"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnDongYDK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dongy"
+                    android:layout_weight="1"
+                    android:padding="@dimen/size10dp"
+                    android:layout_margin="@dimen/size10dp"
+                    android:background="@drawable/custom_button"
+                    />
+
+                <Button
+                    android:id="@+id/btnThoatDK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thoat"
+                    android:layout_weight="1"
+                    android:padding="@dimen/size10dp"
+                    android:layout_margin="@dimen/size10dp"
+                    android:background="@drawable/custom_button_dangnhap"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

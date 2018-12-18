@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud_screen"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sửa món ăn"
+        android:layout_gravity="center"
+        android:textSize="@dimen/size20sp"
+        android:layout_margin="@dimen/size10dp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size250dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <EditText
+                android:id="@+id/edSuaTenMonAn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_margin="@dimen/size10dp"
+                android:padding="@dimen/size10dp"
+                android:hint="Tên món ăn"
+                android:textColor="@color/colorGray"
+                android:textColorHint="@color/colorGray"
+                />
+
+            <EditText
+                android:id="@+id/edSuaGiaTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:layout_margin="@dimen/size10dp"
+                android:padding="@dimen/size10dp"
+                android:hint="Giá tiền"
+                android:textColor="@color/colorGray"
+                android:textColorHint="@color/colorGray"
+                android:numeric="integer"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:id="@+id/spinLoaiMonAn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/size10dp"
+                    android:padding="@dimen/size10dp"
+
+                    >
+
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imHinhThucDon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size150dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/btnDongYSuaMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dongy"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size10dp"
+            android:padding="@dimen/size10dp"
+            android:background="@drawable/custom_button_dangnhap"
+            />
+
+        <Button
+            android:id="@+id/btnThoatSuaMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thoat"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/size10dp"
+            android:padding="@dimen/size10dp"
+            android:background="@drawable/custom_button"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#189aca</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorGray">#ccc</color>
+    <color name="colorOrange">#EF6C00</color>
+    <color name="colorGreenButton">#43A047</color>
+    <color name="colorXanh">#00ACC1</color>
+    <color name="backgroundDangNhap">#68992e</color>
+    <color name="colorRed">#e40404</color>
+    <color name="backgroundToolbar">#d77a09</color>
+    <color name="backgroundtransparentGreen">#6643A047</color>
+    <color name="colorBlack">#000</color>4
+    <color name="transparentBackgroundDangNhap">#66000000</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgHinhSuaMonAn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/nhanvien"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:id="@+id/txtTenSuaMonAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên món an"
+        android:layout_toRightOf="@+id/imgHinhSuaMonAn"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <EditText
+        android:id="@+id/edSuaGiaTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá tiền"
+        android:layout_toRightOf="@+id/imgHinhSuaMonAn"
+        android:layout_below="@+id/txtTenSuaMonAn"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
